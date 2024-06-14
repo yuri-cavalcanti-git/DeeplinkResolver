@@ -1,8 +1,10 @@
 import Foundation
 
 struct FlowResolver {
+    private let parser: DeeplinkParserType = DeeplinkParser()
+    
     func resolveDeeplink(components: URLComponents) -> Flow? {
-        let (baseUrl, parameters) = DeeplinkParser().parse(url: components)
+        let (baseUrl, parameters) = parser.parse(url: components)
         switch baseUrl {
         case "/payments/reprocessing":
             let id = parameters["id"]
@@ -12,7 +14,7 @@ struct FlowResolver {
             return .bankslip
             
         case let str where str.starts(with: "/home"),
-            let str where str.starts(with: "generic"):
+            let str where str.starts(with: "/generic"):
             return .home
             
         default:

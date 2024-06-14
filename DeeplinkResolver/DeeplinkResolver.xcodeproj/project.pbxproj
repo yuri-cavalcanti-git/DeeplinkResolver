@@ -13,7 +13,6 @@
 		DABA784A2C1CBB6D00DDFE7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABA78482C1CBB6D00DDFE7D /* Main.storyboard */; };
 		DABA784C2C1CBB6F00DDFE7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABA784B2C1CBB6F00DDFE7D /* Assets.xcassets */; };
 		DABA784F2C1CBB6F00DDFE7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABA784D2C1CBB6F00DDFE7D /* LaunchScreen.storyboard */; };
-		DABA785A2C1CBB7000DDFE7D /* DeeplinkResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA78592C1CBB7000DDFE7D /* DeeplinkResolverTests.swift */; };
 		DABA78742C1CC00400DDFE7D /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = DABA78732C1CC00400DDFE7D /* Quick */; };
 		DABA78772C1CC02700DDFE7D /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = DABA78762C1CC02700DDFE7D /* Nimble */; };
 		DABA787A2C1CC05000DDFE7D /* Nimble-Snapshots in Frameworks */ = {isa = PBXBuildFile; productRef = DABA78792C1CC05000DDFE7D /* Nimble-Snapshots */; };
@@ -21,6 +20,8 @@
 		DABA787E2C1CC22C00DDFE7D /* DeeplinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA787D2C1CC22C00DDFE7D /* DeeplinkParser.swift */; };
 		DABA78802C1CC3BB00DDFE7D /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA787F2C1CC3BB00DDFE7D /* Flow.swift */; };
 		DABA78822C1CC5D600DDFE7D /* FlowResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA78812C1CC5D600DDFE7D /* FlowResolver.swift */; };
+		DABA78842C1CDBE000DDFE7D /* FlowResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA78832C1CDBDF00DDFE7D /* FlowResolverTests.swift */; };
+		DABA78862C1CE08700DDFE7D /* DeeplinkParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA78852C1CE08700DDFE7D /* DeeplinkParserTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +44,12 @@
 		DABA784E2C1CBB6F00DDFE7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DABA78502C1CBB6F00DDFE7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DABA78552C1CBB7000DDFE7D /* DeeplinkResolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeeplinkResolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DABA78592C1CBB7000DDFE7D /* DeeplinkResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkResolverTests.swift; sourceTree = "<group>"; };
 		DABA787B2C1CC18700DDFE7D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		DABA787D2C1CC22C00DDFE7D /* DeeplinkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkParser.swift; sourceTree = "<group>"; };
 		DABA787F2C1CC3BB00DDFE7D /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		DABA78812C1CC5D600DDFE7D /* FlowResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowResolver.swift; sourceTree = "<group>"; };
+		DABA78832C1CDBDF00DDFE7D /* FlowResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowResolverTests.swift; sourceTree = "<group>"; };
+		DABA78852C1CE08700DDFE7D /* DeeplinkParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkParserTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +112,8 @@
 		DABA78582C1CBB7000DDFE7D /* DeeplinkResolverTests */ = {
 			isa = PBXGroup;
 			children = (
-				DABA78592C1CBB7000DDFE7D /* DeeplinkResolverTests.swift */,
+				DABA78832C1CDBDF00DDFE7D /* FlowResolverTests.swift */,
+				DABA78852C1CE08700DDFE7D /* DeeplinkParserTests.swift */,
 			);
 			path = DeeplinkResolverTests;
 			sourceTree = "<group>";
@@ -240,7 +243,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DABA785A2C1CBB7000DDFE7D /* DeeplinkResolverTests.swift in Sources */,
+				DABA78862C1CE08700DDFE7D /* DeeplinkParserTests.swift in Sources */,
+				DABA78842C1CDBE000DDFE7D /* FlowResolverTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
